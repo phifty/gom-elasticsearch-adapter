@@ -1,0 +1,7 @@
+.idea
+.bundle
+pkg
+html
+doc
+coverage
+Gemfile.lock

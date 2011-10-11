@@ -1,0 +1,4 @@
+
+= Generic Object Mapper - ElasticSearch adapter
+
+{<img src="http://travis-ci.org/phifty/gom-elasticsearch-adapter.png" />}[http://travis-ci.org/phifty/gom-elasticsearch-adapter]
