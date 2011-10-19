@@ -22,6 +22,7 @@ Gem::Specification.new do |specification|
 
   specification.add_dependency "gom", ">= 0.5.0"
 
+  specification.add_development_dependency "gom-couchdb-adapter", ">= 0.5.0"
   specification.add_development_dependency "rspec", ">= 2"
   specification.add_development_dependency "reek", ">= 1.2"
 end
