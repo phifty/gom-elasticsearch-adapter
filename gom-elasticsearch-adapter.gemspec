@@ -3,7 +3,7 @@
 Gem::Specification.new do |specification|
   specification.name              = "gom-elasticsearch-adapter"
   specification.version           = "0.1.1"
-  specification.date              = "2011-10-19"
+  specification.date              = "2011-10-20"
 
   specification.authors           = [ "Philipp Brüll" ]
   specification.email             = "b.phifty@gmail.com"
