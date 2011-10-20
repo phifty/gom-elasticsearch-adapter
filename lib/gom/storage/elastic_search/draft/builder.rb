@@ -17,9 +17,10 @@ class GOM::Storage::ElasticSearch::Draft::Builder
   private
 
   def hashed(item)
+    return item unless item.is_a?(Tire::Results::Item)
     hash = item.to_hash
     hash.each do |key, value|
-      hash[key] = hashed value if value.is_a?(Tire::Results::Item)
+      hash[key] = value.is_a?(Array) ? value.map{ |entry| hashed entry } : hashed(value)
     end
     hash
   end

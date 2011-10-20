@@ -1,7 +1,7 @@
 source :rubygems
 
 gem "rake", ">= 0.9.2"
-gem "gom", ">= 0.5.1"
+gem "gom", ">= 0.5.2"
 gem "tire", ">= 0.3.5"
 gem "activesupport", ">= 3.1.1"
 gem "transport", ">= 1.0.3"
