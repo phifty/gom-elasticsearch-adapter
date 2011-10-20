@@ -3,7 +3,7 @@
 class GOM::Storage::ElasticSearch::Draft::Builder
 
   def initialize(item)
-    @item = item.to_hash
+    @item = hashed item
   end
 
   def draft
@@ -15,6 +15,14 @@ class GOM::Storage::ElasticSearch::Draft::Builder
   end
 
   private
+
+  def hashed(item)
+    hash = item.to_hash
+    hash.each do |key, value|
+      hash[key] = hashed value if value.is_a?(Tire::Results::Item)
+    end
+    hash
+  end
 
   def initialize_draft
     @draft = GOM::Object::Draft.new

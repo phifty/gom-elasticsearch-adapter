@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |specification|
   specification.name              = "gom-elasticsearch-adapter"
-  specification.version           = "0.1.0"
+  specification.version           = "0.1.1"
   specification.date              = "2011-10-19"
 
   specification.authors           = [ "Philipp Brüll" ]
@@ -20,7 +20,7 @@ Gem::Specification.new do |specification|
 
   specification.test_files        = Dir["spec/**/*_spec.rb"]
 
-  specification.add_dependency "gom", ">= 0.5.0"
+  specification.add_dependency "gom", ">= 0.5.1"
 
   specification.add_development_dependency "gom-couchdb-adapter", ">= 0.5.0"
   specification.add_development_dependency "rspec", ">= 2"
